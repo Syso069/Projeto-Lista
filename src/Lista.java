@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Lista {
+    Scanner valorDeEntrada = new Scanner(System.in);
     public void criaLista() {
-        System.out.println("Chamando função cria lista");
+        System.out.println("Digite o nome da lista que deseja criar:");
+        String nome =  valorDeEntrada.nextLine();
+        System.out.println("O nome da lista que você deu é: " + nome);
     }
 
     public  void editaLista() {
