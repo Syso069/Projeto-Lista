@@ -20,16 +20,20 @@ public class ItemLista {
                     listaTarefas.adicionarTarefa(tarefa);
                     break;
                 case 2:
-                    System.out.println("opcao 2");
+                    System.out.println("Digite o true para concluido e false para não concluido: ");
+                    boolean editarStatus = tarefaEscrita.nextBoolean();
+                    listaTarefas.editarTarefa(editarStatus);
                     break;
                 case 3:
                     listaTarefas.verTarefa();
                     break;
                 case 4:
-                    System.out.println("opcao 4");
+                    System.out.println("Digite o indice do item que deseja remover: ");
+                    int removeTarefa =  numeroItemDigitado.nextInt();
+                    listaTarefas.removeTarefa(removeTarefa);
                     break;
                 case 5:
-                    System.out.println("opcao 5");
+                    listaTarefas.sairTarefa();
                     break;
                 default:
                     System.out.println("Opção inválida!");

@@ -6,10 +6,6 @@ public class Tarefa {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public boolean isStatus() {
         return status;
     }
@@ -20,5 +16,14 @@ public class Tarefa {
 
     public Tarefa(String descricao) {
         this.descricao = descricao;
+    }
+
+    public Tarefa() {
+
+    }
+
+    @Override
+    public String toString() {
+        return descricao;
     }
 }
